@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfolio | CodeSecure Agency</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+
+    <style>
+        /* Tech Tags */
+        .tech-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            border: 1px solid var(--glass-border);
+        }
+
+        /* Demo Buttons */
+        .project-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .project-links a {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .link-demo {
+            background: var(--text-main);
+            color: var(--bg);
+        }
+
+        .link-code {
+            border: 1px solid var(--glass-border);
+            color: var(--text-main);
+        }
+
+        .link-demo:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .link-code:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Filter Buttons */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            padding: 8px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">CodeSecure<span class="dot">.</span></div>
+    </div>
+
+    <div class="aurora">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div id="header-placeholder"></div>
+
+    <section class="container section-padding" style="text-align:center; padding-top: 140px;">
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; margin-bottom: 25px; font-weight: 800;">
+            Our <span
+                style="background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Masterpieces.</span>
+        </h1>
+        <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px;">
+            A collection of our high-performance deployments, secure systems, and creative designs.
+        </p>
+    </section>
+
+    <div class="container">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="security">Security Tools</button>
+            <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+        </div>
+    </div>
+
+    <section class="container" style="padding-bottom: 100px;">
+        <div class="grid">
+
+            <div class="card-ui project-card" data-category="web" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #6366f1, #a855f7); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.5rem;">
+                    IGI SCRAPER</div>
+                <div style="padding:25px;">
+                    <div>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <h3 style="margin-bottom:10px;">Data Extraction Tool</h3>
+                    <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">Automated PHP script that
+                        mines candidate data securely.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">Live Demo <i class="ph ph-arrow-up-right"></i></a>
+                        <a href="#" class="link-code"><i class="ph ph-github-logo"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-ui project-card" data-category="dashboard" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #3b82f6, #14b8a6); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.5rem;">
+                    LUCK OF BOY</div>
+                <div style="padding:25px;">
+                    <div>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Analytics</span>
+                    </div>
+                    <h3 style="margin-bottom:10px;">Creator Dashboard</h3>
+                    <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">CMS for YouTube creators to
+                        track stats and manage sponsorships.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">Live Demo <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-ui project-card" data-category="security" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #f59e0b, #ef4444); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.5rem;">
+                    FILE MANAGER</div>
+                <div style="padding:25px;">
+                    <div>
+                        <span class="tech-tag">Security</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                    <h3 style="margin-bottom:10px;">Server File Editor</h3>
+                    <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">A secure web-based file
+                        manager to edit server files directly.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">Live Demo <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-ui project-card" data-category="web" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #ec4899, #8b5cf6); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.5rem;">
+                    E-COMMERCE</div>
+                <div style="padding:25px;">
+                    <div>
+                        <span class="tech-tag">Shopify</span>
+                        <span class="tech-tag">Liquid</span>
+                    </div>
+                    <h3 style="margin-bottom:10px;">Fashion Store</h3>
+                    <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">Custom Shopify theme
+                        development for a high-traffic fashion brand.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">Live Demo <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-ui project-card" data-category="dashboard" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #10b981, #3b82f6); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.5rem;">
+                    SAAS APP</div>
+                <div style="padding:25px;">
+                    <div>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Supabase</span>
+                    </div>
+                    <h3 style="margin-bottom:10px;">Project Mgmt Tool</h3>
+                    <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">Task management application
+                        for small teams.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">Live Demo <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-ui project-card" data-category="security" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #64748b, #0f172a); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.5rem;">
+                    VAPT REPORT</div>
+                <div style="padding:25px;">
+                    <div>
+                        <span class="tech-tag">Cyber Security</span>
+                        <span class="tech-tag">Pen-Testing</span>
+                    </div>
+                    <h3 style="margin-bottom:10px;">Bank Security Audit</h3>
+                    <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">Full vulnerability
+                        assessment for a fintech startup.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-demo">View Report <i class="ph ph-file-pdf"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container text-center"
+        style="margin-bottom: 80px; padding: 60px; background: var(--glass-card); border-radius: 24px; border: 1px solid var(--glass-border);">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to build something amazing?</h2>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">Let's turn your idea into a secure, high-performance
+            reality.</p>
+        <a href="index.html#contact" class="btn-glow">Start Your Project</a>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active from all
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active to clicked
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+
+                        if (filterValue === 'all' || filterValue === category) {
+                            card.style.display = 'block';
+                            // Reset Animation
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                card.style.transition = 'all 0.4s ease';
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

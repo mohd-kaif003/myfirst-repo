@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Services | CodeSecure</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script> document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); </script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">CodeSecure<span class="dot">.</span></div>
+    </div>
+    <div class="aurora">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div id="header-placeholder"></div>
+
+    <section class="container section-padding" style="text-align:center; padding-top: 140px;">
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; margin-bottom: 25px; font-weight: 800;">
+            What We <span
+                style="background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Do.</span>
+        </h1>
+        <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px;">
+            Comprehensive digital solutions tailored for growth and security.
+        </p>
+    </section>
+
+    <section class="container section-padding" style="padding-bottom:100px;">
+        <div class="grid" style="margin-top:0;">
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-code"></i></div>
+                <h3>Custom Web Development</h3>
+                <p style="color:var(--text-muted); margin:10px 0;">We build websites that load in milliseconds. Using
+                    Vercel for static sites and optimized PHP for dynamic backends.</p>
+                <ul style="margin-top:15px; list-style:none; color:var(--text-muted); font-size:0.9rem;">
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> React / Next.js</li>
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> PHP & MySQL</li>
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> API Integration</li>
+                </ul>
+            </div>
+
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-shield-check"></i></div>
+                <h3>Cyber Security Audit</h3>
+                <p style="color:var(--text-muted); margin:10px 0;">Don't let hackers find bugs before you do. We perform
+                    rigorous VAPT (Vulnerability Assessment) on your apps.</p>
+                <ul style="margin-top:15px; list-style:none; color:var(--text-muted); font-size:0.9rem;">
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> SQL Injection Testing</li>
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> XSS Protection</li>
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> Server Hardening</li>
+                </ul>
+            </div>
+
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-chart-bar"></i></div>
+                <h3>Dashboard & Analytics</h3>
+                <p style="color:var(--text-muted); margin:10px 0;">Get insights that matter. We build custom admin
+                    panels to visualize your data and manage users.</p>
+                <ul style="margin-top:15px; list-style:none; color:var(--text-muted); font-size:0.9rem;">
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> Real-time Data</li>
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> User Management</li>
+                    <li><i class="ph ph-check" style="color:var(--primary)"></i> Export to PDF/Excel</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

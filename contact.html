@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Contact Us | CodeSecure Agency</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">CodeSecure<span class="dot">.</span></div>
+    </div>
+
+    <div class="aurora">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div id="header-placeholder"></div>
+
+    <section id="contact" class="container section-padding" style="padding-top: 140px;">
+
+        <div class="contact-split">
+
+            <div>
+                <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 25px; font-weight: 800;">Let's Talk.</h1>
+                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 40px;">
+                    Whether you have a question about features, pricing, or need a demo, our team is ready to answer all
+                    your questions.
+                </p>
+
+                <div style="display:flex; gap:20px; margin-bottom:30px; align-items:center;">
+                    <div class="icon-box" style="margin:0;"><i class="ph ph-envelope-simple"></i></div>
+                    <div>
+                        <h4 style="margin-bottom:5px;">Email Us</h4>
+                        <span style="color:var(--text-muted);">hello@codesecure.com</span>
+                    </div>
+                </div>
+
+                <div style="display:flex; gap:20px; margin-bottom:30px; align-items:center;">
+                    <div class="icon-box" style="margin:0;"><i class="ph ph-phone"></i></div>
+                    <div>
+                        <h4 style="margin-bottom:5px;">Call Us</h4>
+                        <span style="color:var(--text-muted);">+91 98765 43210</span>
+                    </div>
+                </div>
+
+                <div style="display:flex; gap:20px; margin-bottom:30px; align-items:center;">
+                    <div class="icon-box" style="margin:0;"><i class="ph ph-map-pin"></i></div>
+                    <div>
+                        <h4 style="margin-bottom:5px;">Visit Us</h4>
+                        <span style="color:var(--text-muted);">Moradabad, Uttar Pradesh, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <form>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <select
+                            style="width:100%; padding:15px; background:transparent; border:none; border-bottom:2px solid var(--glass-border); color:var(--text-main); outline:none; font-family:inherit;">
+                            <option style="background:var(--bg);">Select Service</option>
+                            <option style="background:var(--bg);">Web Development</option>
+                            <option style="background:var(--bg);">Security Audit</option>
+                            <option style="background:var(--bg);">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-group" style="margin-top:25px;">
+                        <textarea required style="height:100px;"></textarea>
+                        <label>Project Details</label>
+                    </div>
+                    <button type="submit" class="btn-glow" style="width:100%;">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

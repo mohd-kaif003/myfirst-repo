@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Blog | CodeSecure</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script> document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); </script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">CodeSecure<span class="dot">.</span></div>
+    </div>
+    <div class="aurora">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div id="header-placeholder"></div>
+
+    <section class="container section-padding" style="text-align:center; padding-top: 140px;">
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 25px; font-weight: 800;">Latest <span
+                style="color:var(--primary);">Insights.</span></h1>
+        <p style="color:var(--text-muted);">Tech news, security tips, and development guides.</p>
+    </section>
+
+    <section class="container section-padding" style="padding-bottom:100px;">
+        <div class="grid" style="margin-top:0;">
+            <div class="card-ui" style="padding:0; overflow:hidden;">
+                <div
+                    style="height:200px; background:var(--input-bg); display:flex; align-items:center; justify-content:center; color:var(--text-muted);">
+                    Image Placeholder</div>
+                <div style="padding:25px;">
+                    <span style="font-size:0.8rem; color:var(--primary); font-weight:700;">SECURITY</span>
+                    <h3 style="margin:10px 0;">How to prevent SQL Injection in PHP?</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">Learn the best practices
+                        to secure your database using Prepared Statements.</p>
+                    <a href="#" style="color:var(--text-main); font-weight:600; text-decoration:none;">Read More
+                        &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card-ui" style="padding:0; overflow:hidden;">
+                <div
+                    style="height:200px; background:var(--input-bg); display:flex; align-items:center; justify-content:center; color:var(--text-muted);">
+                    Image Placeholder</div>
+                <div style="padding:25px;">
+                    <span style="font-size:0.8rem; color:var(--secondary); font-weight:700;">DEVELOPMENT</span>
+                    <h3 style="margin:10px 0;">Why Vercel is best for React Apps?</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">A deep dive into static
+                        site generation and edge networks.</p>
+                    <a href="#" style="color:var(--text-main); font-weight:600; text-decoration:none;">Read More
+                        &rarr;</a>
+                </div>
+            </div>
+
+            <div class="card-ui" style="padding:0; overflow:hidden;">
+                <div
+                    style="height:200px; background:var(--input-bg); display:flex; align-items:center; justify-content:center; color:var(--text-muted);">
+                    Image Placeholder</div>
+                <div style="padding:25px;">
+                    <span style="font-size:0.8rem; color:var(--primary); font-weight:700;">BUSINESS</span>
+                    <h3 style="margin:10px 0;">How much does a website cost in 2025?</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:15px;">Breakdown of pricing for
+                        portfolio, business, and e-commerce sites.</p>
+                    <a href="#" style="color:var(--text-main); font-weight:600; text-decoration:none;">Read More
+                        &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

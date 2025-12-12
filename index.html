@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CodeSecure | Elite Digital Agency</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">CodeSecure<span class="dot">.</span></div>
+    </div>
+
+    <div class="aurora">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div id="header-placeholder"></div>
+
+    <section id="home" class="container section-padding" style="text-align:center; padding-top: 140px;">
+        <h1 class="hero-title"
+            style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; margin-bottom: 25px; font-weight: 800;">
+            Engineering Digital <br> <span
+                style="background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Excellence.</span>
+        </h1>
+        <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px;">
+            We build high-performance websites, secure backend systems, and automated tools using PHP, React & Vercel.
+        </p>
+        <div style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+            <a href="#contact" class="btn-glow">Start Your Project</a>
+            <a href="#work" class="btn-outline">View Portfolio</a>
+        </div>
+    </section>
+
+    <section style="padding: 40px 0; border-bottom: 1px solid var(--glass-border);">
+        <div class="container text-center">
+            <p
+                style="margin-bottom: 20px; font-size: 0.9rem; font-weight: 700; letter-spacing: 1px; color: var(--text-muted); opacity:0.7;">
+                TRUSTED BY</p>
+            <div
+                style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; font-weight:800; font-size:1.5rem; color:var(--text-muted); opacity: 0.8;">
+                <span>Google</span> <span>Vercel</span> <span>Shopify</span> <span>Amazon</span> <span>Stripe</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container section-padding">
+        <div class="text-center">
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">Our Expertise</h2>
+            <p style="color: var(--text-muted); margin-bottom: 50px;">From frontend magic to backend logic, we handle it
+                all.</p>
+        </div>
+        <div class="grid">
+
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-code"></i></div>
+                <h3>Web Development</h3>
+                <p style="color:var(--text-muted); margin-top:10px;">Full stack development using React, PHP and
+                    deployment on Vercel.</p>
+            </div>
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-shield-check"></i></div>
+                <h3>Security Audits</h3>
+                <p style="color:var(--text-muted); margin-top:10px;">Vulnerability assessment (VAPT), SQL Injection
+                    patching & XSS protection.</p>
+            </div>
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-database"></i></div>
+                <h3>Backend Systems</h3>
+                <p style="color:var(--text-muted); margin-top:10px;">Custom Admin panels, CMS, and Database management
+                    tools.</p>
+            </div>
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-chart-line-up"></i></div>
+                <h3>SEO & Analytics</h3>
+                <p style="color:var(--text-muted); margin-top:10px;">Google ranking strategies and custom visitor
+                    tracking systems.</p>
+            </div>
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-rocket"></i></div>
+                <h3>Optimization</h3>
+                <p style="color:var(--text-muted); margin-top:10px;">Speed optimization to make your site load in under
+                    1 second.</p>
+            </div>
+            <div class="card-ui">
+                <div class="icon-box"><i class="ph ph-robot"></i></div>
+                <h3>Automation</h3>
+                <p style="color:var(--text-muted); margin-top:10px;">Scraping tools and bots to automate repetitive
+                    tasks.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section class="container" style="margin-bottom: 80px;">
+        <div class="card-ui"
+            style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; padding: 50px;">
+            <div class="text-center">
+                <h2 style="font-size: 3rem; color: var(--primary);">50+</h2>
+                <p style="color: var(--text-muted); font-weight: 600;">Projects</p>
+            </div>
+            <div class="text-center">
+                <h2 style="font-size: 3rem; color: var(--secondary);">100%</h2>
+                <p style="color: var(--text-muted); font-weight: 600;">Secure</p>
+            </div>
+            <div class="text-center">
+                <h2 style="font-size: 3rem; color: var(--primary);">24/7</h2>
+                <p style="color: var(--text-muted); font-weight: 600;">Support</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="container" style="margin-bottom: 80px;">
+        <div class="card-ui"
+            style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; padding: 50px;">
+
+            <div class="text-center">
+                <h2 style="font-size: 3rem; color: var(--primary); font-weight: 800;">
+                    <span class="counter" data-target="50">0</span>+
+                </h2>
+                <p style="color: var(--text-muted); font-weight: 600;">Projects Done</p>
+            </div>
+
+            <div class="text-center">
+                <h2 style="font-size: 3rem; color: var(--secondary); font-weight: 800;">
+                    <span class="counter" data-target="100">0</span>%
+                </h2>
+                <p style="color: var(--text-muted); font-weight: 600;">Security Score</p>
+            </div>
+
+            <div class="text-center">
+                <h2 style="font-size: 3rem; color: var(--primary); font-weight: 800;">
+                    <span class="counter" data-target="24">0</span>/7
+                </h2>
+                <p style="color: var(--text-muted); font-weight: 600;">Active Support</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="work" class="container section-padding">
+        <div class="text-center">
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;">Recent Works</h2>
+            <p style="color: var(--text-muted); margin-bottom: 50px;">Check out our latest deployments.</p>
+        </div>
+        <div class="grid">
+            <div class="card-ui" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #6366f1, #a855f7); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.2rem;">
+                    IGI SCRAPER</div>
+                <div style="padding:25px;">
+                    <h3>Data Extraction Tool</h3>
+                    <p style="color:var(--text-muted); margin:10px 0;">Automated PHP script for data mining.</p>
+                    <span style="font-size:0.8rem; font-weight:700; color:var(--primary);">PHP • MYSQL</span>
+                </div>
+            </div>
+            <div class="card-ui" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #3b82f6, #14b8a6); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.2rem;">
+                    YOUTUBE MANAGER</div>
+                <div style="padding:25px;">
+                    <h3>Luck Of Boy Dashboard</h3>
+                    <p style="color:var(--text-muted); margin:10px 0;">Content management system.</p>
+                    <span style="font-size:0.8rem; font-weight:700; color:var(--primary);">DASHBOARD</span>
+                </div>
+            </div>
+            <div class="card-ui" style="padding:0;">
+                <div
+                    style="height:220px; background:linear-gradient(135deg, #f59e0b, #ef4444); display:flex; align-items:center; justify-content:center; color:white; font-weight:800; font-size:1.2rem;">
+                    FILE SYSTEM</div>
+                <div style="padding:25px;">
+                    <h3>Secure File Editor</h3>
+                    <p style="color:var(--text-muted); margin:10px 0;">Server-side file management system.</p>
+                    <span style="font-size:0.8rem; font-weight:700; color:var(--primary);">SECURITY</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="container section-padding">
+        <div class="text-center">
+            <h2 class="section-title">Simple Pricing</h2>
+            <p class="section-desc">Choose the plan that fits your business needs.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card-ui" style="text-align: center;">
+                <h3>Starter</h3>
+                <div style="font-size: 3rem; font-weight: 700; margin: 20px 0;">$199</div>
+
+                <ul class="feature-list">
+                    <li class="available"><i class="ph ph-check"></i> 5 Page Website</li>
+                    <li class="available"><i class="ph ph-check"></i> Mobile Responsive</li>
+                    <li class="available"><i class="ph ph-check"></i> Basic Contact Form</li>
+                    <li class="unavailable"><i class="ph ph-x"></i> Admin Panel (CMS)</li>
+                    <li class="unavailable"><i class="ph ph-x"></i> Security Audit</li>
+                    <li class="unavailable"><i class="ph ph-x"></i> Priority Support</li>
+                </ul>
+
+                <a href="#contact" class="btn-outline" style="width:100%; display:block;">Choose Starter</a>
+            </div>
+
+            <div class="card-ui"
+                style="text-align: center; border-color: var(--primary); box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);">
+                <div
+                    style="position:absolute; top:20px; right:20px; background:var(--primary); color:white; padding:4px 12px; border-radius:20px; font-size:0.8rem; font-weight:700;">
+                    POPULAR</div>
+                <h3>Business</h3>
+                <div style="font-size: 3rem; font-weight: 700; margin: 20px 0;">$499</div>
+
+                <ul class="feature-list">
+                    <li class="available"><i class="ph ph-check"></i> 15 Page Website</li>
+                    <li class="available"><i class="ph ph-check"></i> Mobile Responsive</li>
+                    <li class="available"><i class="ph ph-check"></i> Admin Panel (CMS)</li>
+                    <li class="available"><i class="ph ph-check"></i> Security Audit</li>
+                    <li class="available"><i class="ph ph-check"></i> SEO Optimization</li>
+                    <li class="unavailable"><i class="ph ph-x"></i> 24/7 Priority Support</li>
+                </ul>
+
+                <a href="#contact" class="btn-glow" style="width:100%; display:block;">Choose Business</a>
+            </div>
+
+            <div class="card-ui" style="text-align: center;">
+                <h3>Enterprise</h3>
+                <div style="font-size: 3rem; font-weight: 700; margin: 20px 0;">Custom</div>
+
+                <ul class="feature-list">
+                    <li class="available"><i class="ph ph-check"></i> Unlimited Pages</li>
+                    <li class="available"><i class="ph ph-check"></i> Custom Web Application</li>
+                    <li class="available"><i class="ph ph-check"></i> Database Integration</li>
+                    <li class="available"><i class="ph ph-check"></i> Advanced Security</li>
+                    <li class="available"><i class="ph ph-check"></i> 24/7 Priority Support</li>
+                    <li class="available"><i class="ph ph-check"></i> Dedicated Server</li>
+                </ul>
+
+                <a href="#contact" class="btn-outline" style="width:100%; display:block;">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padding" style="max-width: 800px;">
+        <h2 class="text-center" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 50px;">FAQ</h2>
+
+        <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-question">
+                How long does it take? <i class="ph ph-caret-down"></i>
+            </div>
+            <div class="faq-ans">
+                Basic sites take 3-5 days. Complex apps take 2-4 weeks.
+            </div>
+        </div>
+
+        <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-question">
+                Do you offer hosting? <i class="ph ph-caret-down"></i>
+            </div>
+            <div class="faq-ans">
+                Yes, we prefer deploying on Vercel for speed and security.
+            </div>
+        </div>
+
+        <div class="faq-card" onclick="toggleFaq(this)">
+            <div class="faq-question">
+                Is it secure? <i class="ph ph-caret-down"></i>
+            </div>
+            <div class="faq-ans">
+                Absolutely. We follow strict security protocols.
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container section-padding">
+        <div class="contact-split"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div>
+                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px;">Let's Work Together</h2>
+                <p style="color:var(--text-muted); font-size:1.1rem; margin-bottom:30px;">
+                    Have a project in mind? Fill out the form and we'll get back to you within 24 hours.
+                </p>
+
+                <div style="display:flex; gap:15px; margin-bottom:20px; align-items:center;">
+                    <div class="icon-box" style="margin:0; width:45px; height:45px; font-size:1.2rem;"><i
+                            class="ph ph-envelope-simple"></i></div>
+                    <span style="font-size:1.1rem; font-weight:500;">hello@codesecure.com</span>
+                </div>
+                <div style="display:flex; gap:15px; margin-bottom:20px; align-items:center;">
+                    <div class="icon-box" style="margin:0; width:45px; height:45px; font-size:1.2rem;"><i
+                            class="ph ph-whatsapp-logo"></i></div>
+                    <span style="font-size:1.1rem; font-weight:500;">+91 98765 43210</span>
+                </div>
+                <div style="display:flex; gap:15px; margin-bottom:20px; align-items:center;">
+                    <div class="icon-box" style="margin:0; width:45px; height:45px; font-size:1.2rem;"><i
+                            class="ph ph-map-pin"></i></div>
+                    <span style="font-size:1.1rem; font-weight:500;">Moradabad, India</span>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <form>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea required style="height:100px;"></textarea>
+                        <label>Project Details</label>
+                    </div>
+                    <button type="submit" class="btn-glow" style="width:100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<nav>
+    <a href="index.html" class="logo" style="text-decoration:none; color:var(--text-main);">
+        Code<span>Secure</span>.
+    </a>
+
+    <div class="desktop-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+
+        <div class="switch-container">
+            <input type="checkbox" id="desktopThemeCheckbox" class="switch-input" onchange="toggleTheme(this)">
+            <label for="desktopThemeCheckbox" class="switch-label">
+                <i class="ph ph-sun" style="color:#f59e0b"></i>
+                <i class="ph ph-moon" style="color:#94a3b8"></i>
+                <div class="switch-circle"></div>
+            </label>
+        </div>
+
+        <a href="contact.html" class="btn-glow" style="margin-left: 15px;">Contact Us</a>
+    </div>
+
+    <button class="hamburger" onclick="toggleMenu()"><i class="ph ph-list"></i></button>
+</nav>
+
+<div class="sidebar" id="sidebar">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+        <a href="index.html" class="logo" style="text-decoration:none; color:var(--text-main);">Menu</a>
+        <button onclick="toggleMenu()"
+            style="background:none; border:none; font-size:1.8rem; color:var(--text-main);"><i
+                class="ph ph-x"></i></button>
+    </div>
+
+    <div class="sidebar-links">
+        <a href="index.html" class="nav-link"><i class="ph ph-house"></i> Home</a>
+        <a href="about.html" class="nav-link"><i class="ph ph-info"></i> About</a>
+        <a href="services.html" class="nav-link"><i class="ph ph-lightning"></i> Services</a>
+        <a href="portfolio.html" class="nav-link"><i class="ph ph-briefcase"></i> Portfolio</a>
+        <a href="blog.html" class="nav-link"><i class="ph ph-newspaper"></i> Blog</a>
+        <a href="contact.html" class="nav-link"><i class="ph ph-paper-plane-tilt"></i> Contact</a>
+    </div>
+
+    <div
+        style="margin-top:auto; padding-top:20px; border-top:1px solid var(--glass-border); display:flex; justify-content:space-between; align-items:center;">
+        <span style="font-weight:600;">Dark Mode</span>
+        <div class="switch-container">
+            <input type="checkbox" id="mobileThemeCheckbox" class="switch-input" onchange="toggleTheme(this)">
+            <label for="mobileThemeCheckbox" class="switch-label">
+                <i class="ph ph-sun" style="color:#f59e0b"></i>
+                <i class="ph ph-moon" style="color:#94a3b8"></i>
+                <div class="switch-circle"></div>
+            </label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Terms of Service | CodeSecure</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">CodeSecure<span class="dot">.</span></div>
+    </div>
+
+    <div class="aurora">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <div id="header-placeholder"></div>
+
+    <section class="container section-padding" style="padding-top:140px; max-width:900px;">
+
+        <div class="text-center" style="margin-bottom: 50px;">
+            <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin-bottom: 15px;">Terms of <span
+                    style="color:var(--primary);">Service.</span></h1>
+            <p style="color:var(--text-muted);">Please read these terms carefully before using our services.</p>
+        </div>
+
+        <div class="card-ui" style="padding:40px;">
+            <p style="color:var(--text-muted); margin-bottom:30px; font-size: 0.9rem;">Last Updated: December 2025</p>
+
+            <div style="margin-bottom: 30px;">
+                <h3 style="margin-bottom:15px; color:var(--text-main);">1. Acceptance of Terms</h3>
+                <p style="color:var(--text-muted); line-height:1.6;">
+                    By accessing and using the website of <strong>CodeSecure</strong>, you accept and agree to be bound
+                    by the terms and provision of this agreement. If you do not agree to abide by these terms, please do
+                    not use this service.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <h3 style="margin-bottom:15px; color:var(--text-main);">2. Services Provided</h3>
+                <p style="color:var(--text-muted); line-height:1.6;">
+                    CodeSecure provides web development, security auditing, and software solutions. We reserve the right
+                    to modify or discontinue any service at any time without notice.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <h3 style="margin-bottom:15px; color:var(--text-main);">3. Intellectual Property</h3>
+                <p style="color:var(--text-muted); line-height:1.6;">
+                    All content, code, and designs created by CodeSecure remain our property until full payment is
+                    received. Upon payment, the client is granted a license to use the product for its intended purpose.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <h3 style="margin-bottom:15px; color:var(--text-main);">4. Payment Terms</h3>
+                <p style="color:var(--text-muted); line-height:1.6;">
+                    For all projects, a 50% advance payment is required to commence work. The remaining balance is due
+                    upon project completion and before the final handover of credentials or source code.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <h3 style="margin-bottom:15px; color:var(--text-main);">5. Limitation of Liability</h3>
+                <p style="color:var(--text-muted); line-height:1.6;">
+                    CodeSecure shall not be liable for any direct, indirect, incidental, or consequential damages
+                    resulting from the use or inability to use our services.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <h3 style="margin-bottom:15px; color:var(--text-main);">6. Governing Law</h3>
+                <p style="color:var(--text-muted); line-height:1.6;">
+                    These terms shall be governed by the laws of India. Any disputes arising from this agreement shall
+                    be subject to the jurisdiction of the courts in Moradabad, Uttar Pradesh.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
